@@ -5,6 +5,7 @@ name3 = input("Enter name 3: ")
 name4 = input("Enter name 4: ")
 name5 = input("Enter name 5: ")
 vowel_names = []
+vowels = "aeiouAEIOU"
 if name1[0] in vowels:
     vowel_names.append(name1)
 if name2[0] in vowels:
