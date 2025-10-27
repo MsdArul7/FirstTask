@@ -1,10 +1,16 @@
 #Write a code using sets get a info of for creating a student database
 student = set()
-student_info = input("How many students do you want to add to the database?: ")
-for i in range(int(student_info)):
-    name = input("Enter student name: ")
+student_info = input("Enter the number of students to add to the database: ")
+while True:
+    names = input("Enter student name (or type 'done' to finish): ")
     age = input("Enter student age: ")
-    grade = input("Enter student grade: ")
-    student.add((name, age, grade))
-print("Student database:")
-print(student)
+    emp_id = input("Enter student ID: ")
+    student.add((names, age, emp_id))
+    print("Student added to the database.")
+    cont = input("Do you want to add another student? (yes/no): ")
+    if cont.lower() != 'yes':
+        break
+print("Student Database:")
+for info in student:    
+    print(f"Name: {info[0]}, Age: {info[1]}, ID: {info[2]}")
+print("Total number of students in the database:", len(student))
