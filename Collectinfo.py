@@ -12,8 +12,7 @@ while True:
     #convert list to tuple
 students = tuple(students)
 print("Students info")
-for student in students:
-    print(f"Name: {student[0]}, Age: {student[1]}, Marks: {student[2]}")
+for
 #Finding the student with maximum score using lambda function
 max_score_student = max(students, key=lambda x: x[2])
 print(f"Top student is {max_score_student[0]} with marks {max_score_student[2]}")

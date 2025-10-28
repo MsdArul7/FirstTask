@@ -7,6 +7,8 @@ for char in string:
         count += 1
 print("Number of vowels in the string:", count)
 
+
+
         
 
         
