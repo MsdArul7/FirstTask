@@ -7,6 +7,7 @@ class student_info:
         print(f"Name: {self.name}, Age: {self.age}, Marks: {self.marks}")
 result = student_info("Alice", 20, 95)
 result.display_info()
+
 #use parent class to inherit the properties
 class UGstudent_details(student_info):
     def __init__(self,name,age,marks,department):
