@@ -1,3 +1,4 @@
+today date 03/11/2025
 def elementRemoval(N, K, A):
     result = -404
     count ={}
